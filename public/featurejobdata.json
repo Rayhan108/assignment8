@@ -1,7 +1,7 @@
  [
       {
         "id": 1,
-        "company_logo": "https://example.com/company1-logo.png",
+        "company_logo": "/public/Logo/google-1-1 1-1.png",
         "job_title": "Software Developer",
         "company_name": "ABC Software",
         "remote_or_onsite": "Onsite",
@@ -19,7 +19,7 @@
       },
       {
         "id": 2,
-        "company_logo": "https://example.com/company2-logo.png",
+        "company_logo": "/public/Logo/netflix-4 1.png",
         "job_title": "Data Analyst",
         "company_name": "XYZ Corp",
         "remote_or_onsite": "Remote",
@@ -37,7 +37,7 @@
       },
       {
         "id": 3,
-        "company_logo": "https://example.com/company3-logo.png",
+        "company_logo": "/public/Logo/google-1-1 1.png",
         "job_title": "UI/UX Designer",
         "company_name": "123 Web",
         "remote_or_onsite": "Onsite",
@@ -55,7 +55,7 @@
       },
       {
         "id": 4,
-        "company_logo": "https://example.com/company4-logo.png",
+        "company_logo": "/public/Logo/tesla-9 1.png",
         "job_title": "Database Administrator",
         "company_name": "Acme Analytics",
         "remote_or_onsite": "Onsite",
@@ -73,7 +73,7 @@
         },
         {
             "id": 5,
-            "company_logo": "https://example.com/company1-logo.png",
+            "company_logo": "/public/Logo/netflix-4 1.png",
             "job_title": "Mobile App Developer",
             "company_name": "ABC Software",
             "remote_or_onsite": "Onsite",
@@ -91,7 +91,7 @@
           },
           {
             "id": 6,
-            "company_logo": "https://example.com/company2-logo.png",
+            "company_logo": "/public/Logo/tesla-9 1.png",
             "job_title": "Front-end Web Developer",
             "company_name": "XYZ Corporation",
             "remote_or_onsite": "Remote",

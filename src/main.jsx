@@ -21,7 +21,8 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <FirstPage/>,
-      loader:()=>fetch('catagorydata.json')
+      loader:()=>fetch('catagorydata.json'),
+      loader:()=>fetch('featurejobdata.json')
     },
     {
       path: "/statistics",

@@ -1,9 +1,13 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Catagory from '../Catagory/Catagory';
+import FeatureJob from '../FeatureJob/FeatureJob';
 
 const FirstPage = () => {
     const catagories = useLoaderData();
+
+    const featureJobs = useLoaderData();
+    // console.log(featureJobs)
    
     return (
         <div>
@@ -17,7 +21,7 @@ const FirstPage = () => {
             <img src="person.png" alt="" />
          </div>
         </div>
-        {/* Catagory section */}
+        {/*---------- Catagory section -----------------*/}
         <div>
            <div className='mx-auto text-center py-3'>
            <h1 className='text-3xl font-bold '>Job Category List</h1>
@@ -31,9 +35,35 @@ const FirstPage = () => {
 
 </div>
         </div>
+{/*-------------------------- feature Job section ------------------------------------*/}
+
+<div>
+<div className='mx-auto text-center py-3 mb-10'>
+           <h1 className='text-3xl font-bold '>Featured Jobs</h1>
+            <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+           </div>
+<div className="grid grid-cols-2 gap-10 justify-center">
+{
+ 
+featureJobs.map(featureJob=><FeatureJob featureJob={featureJob} key={featureJob.id}></FeatureJob>)
+
+}
+</div>
+
+</div>
+
+<div className=" m-10 justify-center">
+    <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link>
+
+</div>
         </div>
+        
        
     );
+
+
+
+
 };
 
 export default FirstPage;
