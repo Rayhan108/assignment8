@@ -21,6 +21,7 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <FirstPage/>,
+      loader:()=>fetch('catagorydata.json')
     },
     {
       path: "/statistics",

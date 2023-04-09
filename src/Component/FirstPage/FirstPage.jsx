@@ -1,6 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Catagory from '../Catagory/Catagory';
 
 const FirstPage = () => {
+    const catagories = useLoaderData();
+   
     return (
         <div>
  <div className='flex bg-gray-100 mb-10'>
@@ -19,7 +23,13 @@ const FirstPage = () => {
            <h1 className='text-3xl font-bold '>Job Category List</h1>
             <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
            </div>
-           
+<div className='flex  justify-between  '>
+    
+{
+    catagories.map((catagory,idx) =><Catagory key={idx} catagory={catagory}></Catagory>)
+}
+
+</div>
         </div>
         </div>
        
