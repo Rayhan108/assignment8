@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Catagory from '../Catagory/Catagory';
 import FeatureJob from '../FeatureJob/FeatureJob';
+
 
 const FirstPage = () => {
     const [catagories,setCatagories] =useState([])
@@ -15,10 +16,16 @@ const featureJobs = useLoaderData().slice(0,4);
   
     // console.log(featureJobs)
 
+
     useEffect(()=>{
         fetch('catagorydata.json').then(res=>res.json()).then(data=>setCatagories(data))
     },[])
 
+    const [cart,setCart]=useState([]);
+
+
+
+   
 
     return (
         <div>
@@ -56,7 +63,7 @@ const featureJobs = useLoaderData().slice(0,4);
 <div className="grid grid-cols-2 gap-10 justify-center">
 {
  
-featureJobs.map(featureJob=><FeatureJob featureJob={featureJob} key={featureJob.id}></FeatureJob>)
+featureJobs.map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob.id}></FeatureJob>)
 
 }
 </div>

@@ -8,7 +8,7 @@ const Blog = () => {
             <h2 className='text-2xl font-bold text-center'>Question Answer</h2>
       
         <div className="p-10">
-         <h3 className='text-2xl font-bold text-center  mb-10'>1.When should you use context API?</h3>
+         <h3 className='text-2xl font-bold text-center  mb-10'>When should you use context API?</h3>
             <p className='fw-bold'><span className='text-2xl  font-bold'>Ans</span>: 1.We use context API to avoiding props method.When some data needs to be accessible by many components  at different nesting levels these time we use cotext API.Context API works like a tower.
 </p>
 

@@ -25,7 +25,7 @@ const Header = () => {
         <Link className='mr-12 text-2xl   py-2  font-bold hover:bg-purple-400' to="/blog">Blog</Link>
     </div>
     <div className="">
-    <Link to=""><button className='bg-purple-700 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>Start Applying</button></Link>
+    <Link ><button className='bg-purple-700 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>Start Applying</button></Link>
     </div>
          
        </nav>
