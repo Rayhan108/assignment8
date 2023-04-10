@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Catagory from '../Catagory/Catagory';
 import FeatureJob from '../FeatureJob/FeatureJob';
 
 const FirstPage = () => {
-    const catagories = useLoaderData();
+    const [catagories,setCatagories] =useState([])
 
     const featureJobs = useLoaderData();
     // console.log(featureJobs)
+
+    useEffect(()=>{
+        fetch('catagorydata.json').then(res=>res.json()).then(data=>setCatagories(data))
+    },[])
    
     return (
         <div>
@@ -37,7 +41,7 @@ const FirstPage = () => {
         </div>
 {/*-------------------------- feature Job section ------------------------------------*/}
 
-<div>
+ <div>
 <div className='mx-auto text-center py-3 mb-10'>
            <h1 className='text-3xl font-bold '>Featured Jobs</h1>
             <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
@@ -50,7 +54,7 @@ featureJobs.map(featureJob=><FeatureJob featureJob={featureJob} key={featureJob.
 }
 </div>
 
-</div>
+</div> 
 
 <div className=" m-10 justify-center">
     <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link>
