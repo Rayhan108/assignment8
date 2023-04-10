@@ -5,7 +5,7 @@
         "location": "Chicago, IL",
         "available_jobs": "150",
         "salary": "$90,000 - $120,000",
-        "logo": "/Icons/chip 1.png",
+        "logo": "https://i.ibb.co/j4VPySw/chip-1.png",
         "link": "https://example.com/software-developer-job"
       },
       
@@ -15,7 +15,7 @@
         "location": "San Diego, CA",
         "available_jobs": "50",
         "salary": "$120,000 - $150,000",
-        "logo": "/Icons/accounts 1.png",
+        "logo": "https://i.ibb.co/bP7z3Bd/accounts-1.png",
         "link": "https://example.com/devops-engineer-job"
       },
       
@@ -25,7 +25,7 @@
         "location": "Boston, MA",
         "available_jobs": "100",
         "salary": "$100,000 - $130,000",
-        "logo": "/Icons/business 1.png",
+        "logo": "https://i.ibb.co/72Kzkvf/business-1.png",
         "link": "https://example.com/frontend-developer-job"
       },
       
@@ -35,7 +35,7 @@
         "location": "Seattle, WA",
         "available_jobs": "300",
         "salary": "$130,000 - $160,000",
-        "logo": "/Icons/Frame.png",
+        "logo": "https://i.ibb.co/sJPtptb/Frame.png",
         "link": "https://example.com/data-engineer-job"
       }
       

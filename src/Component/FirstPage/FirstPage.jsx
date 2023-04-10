@@ -73,7 +73,7 @@ featureJobs.map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob
 
 
    
-<div onClick={()=>setFeaturejob(!featurejob)} className=" m-10 justify-center">
+<div onClick={()=>setFeaturejob(!featurejob)} className=" m-10 text-center">
 <span>{!featurejob?  <button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button> : ''  }</span>
 
     {/* <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link> */}
