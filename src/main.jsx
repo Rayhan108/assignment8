@@ -26,15 +26,15 @@ const router = createBrowserRouter([
       element: <FirstPage/>,
       loader:()=>fetch('featurejobdata.json')
     },
-    // {
-    //   path: "/:detailsId",
-    //   element: <ViewDetails/>,
-    //   loader:({params})=>fetch('featurejobdata.json')
-    // },
+    {
+      path: "/:detailsId",
+      element: <ViewDetails/>,
+      loader:({params})=>fetch('/featurejobdata.json')
+    },
     {
       path: "/statistics",
       element: <Statistics/>,
-      loader:()=>fetch('marksdata.json')
+      loader:()=>fetch('/marksdata.json')
     },
     {
       path: "/applied-jobs",
@@ -43,11 +43,8 @@ const router = createBrowserRouter([
     {
       path: "/blog",
       element: <Blog/>,
-    },
-    {
-      path: "*",
-      element:<ErrorPage></ErrorPage>,
-    },
+    }
+ 
   ],
   },
   

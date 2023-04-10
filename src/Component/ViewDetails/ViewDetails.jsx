@@ -3,18 +3,22 @@ import { useLoaderData, useParams } from 'react-router-dom';
 
 const ViewDetails = () => {
 
-// const id =useParams()
+const id =useParams()
 // console.log(id);
-// const details =useLoaderData()
+const details =useLoaderData()
 // console.log(details);
+
 // const [data,setData] =useState(details)
-// const singleJob = data.find(det=>det.id ===id)
-// const [singledata,setSingledata]=useState({})
-// if(singleJob){
-//     setSingledata(singleJob)
-//     console.log('igiiuiuhiuhuhuuuuhhhhhhh');
-// }
-// console.log(singledata);
+const [singledata,setSingledata]=useState({})
+useEffect(()=>{
+    const singleJob = details.find(det=>det.id === id)
+
+    if(singleJob){
+        setSingledata(singleJob)
+        console.log('igiiuiuhiuhuhuuuuhhhhhhh');
+    }
+},[id])
+console.log(singledata);
 
   
     return (

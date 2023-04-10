@@ -30,8 +30,8 @@ const FeatureJob = ({featureJob}) => {
                     <p><CurrencyDollarIcon className="h-6 w-6 text-purple-800" />{salary}</p>
                 </div>
                 <div className="">
-  <Link to=""> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link> 
-  {/* <Link to={`/${id}`}> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link>  */}
+  {/* <Link to=""> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link>  */}
+  <Link to={`/${id}`}> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link> 
     </div>
                </div>
             </div>
