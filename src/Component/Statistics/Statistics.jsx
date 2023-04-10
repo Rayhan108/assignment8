@@ -9,9 +9,9 @@ import {
 
 const Statistics = () => {
     const marks =useLoaderData()
-    console.log(marks);
+    // console.log(marks);
     return (
-        <div className='bg-gray-300'>
+        <div className='bg-gray-200'>
             <h1 className='text-3xl font-bold text-center  text-gray-700'>Assignmen Marks</h1>
             <p className='text-center font-bold text-2xl mt-10'>Pie Chart</p>
             <ResponsiveContainer width="100%" height={500} >
