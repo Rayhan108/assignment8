@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Catagory from '../Catagory/Catagory';
 import FeatureJob from '../FeatureJob/FeatureJob';
 
@@ -12,7 +12,8 @@ const FirstPage = () => {
     useEffect(()=>{
         fetch('catagorydata.json').then(res=>res.json()).then(data=>setCatagories(data))
     },[])
-   
+
+
     return (
         <div>
  <div className='flex bg-gray-100 mb-10'>

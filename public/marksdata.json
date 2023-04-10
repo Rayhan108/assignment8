@@ -1,43 +1,43 @@
 [
     {
       "id": 1,
-      "name": "John",
-      "marks": 60
+      "name": "Assignment 1",
+      "mark": 60
     },
     {
       "id": 2,
-      "name": "Mary",
-      "marks": 60
+      "name": "Assignment 2",
+      "mark": 60
     },
     {
       "id": 3,
-      "name": "Tom",
-      "marks": 60
+      "name": "Assignment 3",
+      "mark": 60
     },
     {
       "id": 4,
-      "name": "Sara",
-      "marks": 59
+      "name": "Assignment 4",
+      "mark": 59
     },
     {
       "id": 5,
-      "name": "Bob",
-      "marks": 59
+      "name": "Assignment 5",
+      "mark": 59
     },
     {
       "id": 6,
-      "name": "Alice",
-      "marks": 58
+      "name": "Assignment 6",
+      "mark": 58
     },
     {
       "id": 7,
-      "name": "Alice",
-      "marks": 59
+      "name": "Assignment 7",
+      "mark": 59
     },
     {
       "id": 8,
-      "name": "Alice",
-      "marks": 60
+      "name": "Assignment 8",
+      "mark": 60
     }
   ]
   

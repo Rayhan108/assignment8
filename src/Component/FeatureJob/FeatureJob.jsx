@@ -1,12 +1,19 @@
 import React from 'react';
 import "./FeatureJob.css"
 import {MapPinIcon,CurrencyDollarIcon} from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FeatureJob = ({featureJob}) => {
-    console.log(featureJob);
+    // console.log(featureJob);
     const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location
 ,salary,} =featureJob;
+
+// const navigate =useNavigate()
+// const handleNavigation=()=>{
+//     navigate(`/${id}`)
+// }
+
+
     return (
         <div>
             <div className='card'>
@@ -23,7 +30,8 @@ const FeatureJob = ({featureJob}) => {
                     <p><CurrencyDollarIcon className="h-6 w-6 text-purple-800" />{salary}</p>
                 </div>
                 <div className="">
-    <Link to=""><button className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link>
+  <Link to=""> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link> 
+  {/* <Link to={`/${id}`}> <button  className='bg-purple-700 mt-3 text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>View Details</button></Link>  */}
     </div>
                </div>
             </div>
