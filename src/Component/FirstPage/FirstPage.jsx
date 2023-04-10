@@ -5,8 +5,14 @@ import FeatureJob from '../FeatureJob/FeatureJob';
 
 const FirstPage = () => {
     const [catagories,setCatagories] =useState([])
-
-    const featureJobs = useLoaderData();
+const [featurejob,setFeaturejob] =useState(false)
+const featureJobs = useLoaderData().slice(0,4);
+// if(!featurejob){
+//     const featureJobs = useLoaderData();
+// }else{
+//     const featureJobs = useLoaderData().slice(0,4);
+// }
+  
     // console.log(featureJobs)
 
     useEffect(()=>{
@@ -20,7 +26,7 @@ const FirstPage = () => {
          <div className='my-auto mx-auto w-96 p-11 mt-10 '>
          <h1 className='text-6xl font-bold '>One Step Closer To Your <span className='text-purple-800'> Dream Job</span></h1>
             <p className='mt-5'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-            <button className='bg-purple-700 text-white mt-5 text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>Get Started</button>
+            <button className='bg-purple-700  text-white mt-5 text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>Get Started</button>
          </div>
          <div>
             <img src="person.png" alt="" />
@@ -57,8 +63,13 @@ featureJobs.map(featureJob=><FeatureJob featureJob={featureJob} key={featureJob.
 
 </div> 
 
-<div className=" m-10 justify-center">
-    <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link>
+
+
+   
+<div onClick={()=>setFeaturejob(!featurejob)} className=" m-10 justify-center">
+<span>{!featurejob?  <button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button> : ''  }</span>
+
+    {/* <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link> */}
 
 </div>
         </div>
