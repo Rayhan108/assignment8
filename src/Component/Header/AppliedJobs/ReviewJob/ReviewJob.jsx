@@ -25,8 +25,8 @@ const ReviewJob = ({interestedJob}) => {
           <p className=" ">{company_name}</p>
      
           <div className='flex'>
-                    <button className='p-2 mr-3 mt-3 text-purple-700 border-purple-700 rounded-md bg-white hover:bg-purple-100'>{remote_or_onsite}</button>
-                    <button className='p-2 mr-3 mt-3 text-purple-700 border-purple-700 rounded-md bg-white hover:bg-purple-100'>{fulltime_or_parttime}</button>
+                    <button className='p-2 mr-3 mt-3 text-purple-700 border-purple-700 rounded-md bg-white border hover:bg-purple-100'>{remote_or_onsite}</button>
+                    <button className='p-2 mr-3 mt-3 text-purple-700 border-purple-700 rounded-md bg-white border hover:bg-purple-100'>{fulltime_or_parttime}</button>
                 </div>
           <div className="flex mt-3 mb-3">
               <div className="flex">

@@ -52,6 +52,9 @@ const handleApplyBtn =(job)=>{
   } = job;
 
   return (
+
+ <>
+    <h1 className='text-3xl font-bold text-center p-10 bg-gray-100'>Job Details</h1>
     <div className="flex justify-between items-center m-20">
       <div>
         <h1>
@@ -118,6 +121,8 @@ const handleApplyBtn =(job)=>{
         </div>
       </div>
     </div>
+ 
+ </>
   );
 };
 

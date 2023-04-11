@@ -8,7 +8,7 @@ const AppliedJobs = () => {
  
     return (
         <div>
-           
+           <h1 className='text-3xl font-bold text-center p-10 bg-gray-100'>Applied Jobs</h1>
             {
                 dataFromDb.map(interestedJob =><ReviewJob interestedJob={interestedJob} key={interestedJob.id}></ReviewJob>)
             }

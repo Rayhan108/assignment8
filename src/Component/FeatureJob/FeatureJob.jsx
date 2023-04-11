@@ -19,8 +19,8 @@ const FeatureJob = ({featureJob}) => {
                 <h1 className='text-2xl font-bold mb-3 mt-3'>{job_title}</h1>
                 <h3 className='font-bold m-3'>{company_name}</h3>
                 <div className='flex'>
-                    <button className='p-2 mr-3 text-purple-700 border-purple-700 rounded-md bg-white hover:bg-purple-100'>{remote_or_onsite}</button>
-                    <button className='p-2 mr-3 text-purple-700 border-purple-700 rounded-md bg-white hover:bg-purple-100'>{fulltime_or_parttime}</button>
+                    <button className='p-2 mr-3 text-purple-700 border-purple-700 rounded-md bg-white border hover:bg-purple-100'>{remote_or_onsite}</button>
+                    <button className='p-2 mr-3 text-purple-700 border-purple-700 rounded-md bg-white border hover:bg-purple-100'>{fulltime_or_parttime}</button>
                 </div>
                 <div className="flex mt-3 mb-3">
               <div className="flex">
