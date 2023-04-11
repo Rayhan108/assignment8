@@ -2,16 +2,39 @@ import React, { createContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import "./ViewDetails.css";
 import {MapPinIcon,CurrencyDollarIcon,CreditCardIcon,PhoneIcon,EnvelopeIcon} from '@heroicons/react/24/solid'
+import { addToDb } from "../Utilities/fakedb";
 
 const ViewDetails = () => {
+  const [appliedJob,setAppliedJob]=useState([]);
   const id = useParams();
   // console.log(id.detailsId);
   const jobId = id.detailsId;
+  
 //   console.log(jobId);
   const details = useLoaderData();
   // console.log(details);
   const job = details.find((detail) => detail.id == jobId);
   // console.log(job);
+
+const handleApplyBtn =(job)=>{
+  console.log(job)
+  let newCart =[];
+  
+    const exists =appliedJob.find(aj=>aj.id ===job.id);
+    if(!exists){
+        job.quantity=1;
+        newCart =[...appliedJob,job]
+    }else{
+       exists.quantity = exists.quantity+1;
+       const remaining =appliedJob.filter(apj=>apj.id !== job.id);
+       newCart =[...remaining,exists];
+  
+    }
+    setAppliedJob(newCart);
+    addToDb(job.id);
+    
+  
+}
 
   const {
     company_name,
@@ -91,11 +114,7 @@ const ViewDetails = () => {
        </div>
         </div>
         <div className="mx-auto">
-          <button className="bg-purple-700 text-white mt-5 text-1xl font-bold p-3 rounded-md hover:bg-purple-400 apply-btn ml-3 ">
-            Apply Now
-          </button>
-
-          {/* <button onClick={() => handleApplyBtn(job)} className='bg-purple-700 text-white mt-5 text-1xl font-bold p-3 rounded-md hover:bg-purple-400 apply-btn ml-3 '>Apply Now</button> */}
+          <button onClick={() => handleApplyBtn(job)} className='bg-purple-700 text-white mt-5 text-1xl font-bold p-3 rounded-md hover:bg-purple-400 apply-btn ml-3 '>Apply Now</button>
         </div>
       </div>
     </div>
