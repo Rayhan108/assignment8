@@ -7,16 +7,18 @@ import FeatureJob from '../FeatureJob/FeatureJob';
 const FirstPage = () => {
     const [catagories,setCatagories] =useState([])
 const [featurejob,setFeaturejob] =useState(false)
-const featureJobs = useLoaderData().slice(0,4);
-// if(!featurejob){
-//     const featureJobs = useLoaderData();
-// }else{
-//     const featureJobs = useLoaderData().slice(0,4);
-// }
-  
-    // console.log(featureJobs)
+const [jobData,setJobData] =useState([])
+// const featureJobs = useLoaderData()
+useEffect(()=>{
+    fetch('featurejobdata.json').then(res=>res.json()).then(data=>setJobData(data.slice(0,4)))
+},[])
 
 
+const handleSeeAll=()=>{
+ 
+}
+
+    
     useEffect(()=>{
         fetch('catagorydata.json').then(res=>res.json()).then(data=>setCatagories(data))
     },[])
@@ -63,7 +65,7 @@ const featureJobs = useLoaderData().slice(0,4);
 <div className="grid grid-cols-2 gap-10 justify-center">
 {
  
-featureJobs.map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob.id}></FeatureJob>)
+ jobData.map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob.id}></FeatureJob>)
 
 }
 </div>
@@ -74,7 +76,7 @@ featureJobs.map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob
 
    
 <div onClick={()=>setFeaturejob(!featurejob)} className=" m-10 text-center">
-<span>{!featurejob?  <button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button> : ''  }</span>
+<span>{!featurejob?  <button onClick={handleSeeAll} className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button> : ''  }</span>
 
     {/* <Link to=""><button className='bg-purple-700 mt-3 justify-center text-white text-1xl font-bold p-3 rounded-md hover:bg-purple-400'>See All Jobs</button></Link> */}
 
