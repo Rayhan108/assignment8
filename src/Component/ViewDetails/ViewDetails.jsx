@@ -17,7 +17,7 @@ const ViewDetails = () => {
   // console.log(job);
 
 const handleApplyBtn =(job)=>{
-  console.log(job)
+  // console.log(job)
   let newCart =[];
   
     const exists =appliedJob.find(aj=>aj.id ===job.id);

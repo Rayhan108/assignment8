@@ -1,0 +1,29 @@
+.cart {
+    width: 571px;
+    
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 8px 25px 8px 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.review-details {
+    flex-grow: 1;
+}
+
+
+.cart img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+.company-logo{
+background: #F4F4F4;
+border-radius: 8px;
+}
+
+ 

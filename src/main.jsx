@@ -13,6 +13,7 @@ import AppliedJobs from './Component/Header/AppliedJobs/AppliedJobs';
 import Blog from './Component/Blog/Blog';
 import ViewDetails from './Component/ViewDetails/ViewDetails';
 import ErrorPage from './Component/ErrorPage/ErrorPage';
+import loadData from './Component/ViewDetails/Loaders/LoadData';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
     {
       path: "/applied-jobs",
       element: <AppliedJobs/>,
+      loader: loadData
     },
     {
       path: "/blog",
