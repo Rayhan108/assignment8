@@ -62,7 +62,7 @@ const handleSeeAll=()=>{
 <div className="grid grid-cols-2 gap-10 justify-center">
 {
  
- featureJobs.slice(0,seeAll? 6 : 4).map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob.id}></FeatureJob>)
+ featureJobs.slice(0,seeAll ? 6 : 4).map(featureJob=><FeatureJob  featureJob={featureJob} key={featureJob.id}></FeatureJob>)
 
 }
 </div>
@@ -80,6 +80,8 @@ const handleSeeAll=()=>{
    
 
 </div>
+
+
         </div>
         
        

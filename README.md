@@ -14,3 +14,7 @@ I created this site by using react router v6.10.0. Also Use hericons and tailwin
 - **Applied Job**:user who apply job he/she will found it in this route.This route also have a button name view details.if users click this button he/she will go job details route.This route create dynamically
 - **Statistics**:In this route user can see an pie chart which contains last 8 Assignment marks in this course.
 - **Blog**:In this route user can see 4 important question with ans.
+
+## Live Site Link
+
+ - **Netlify Live Site Link**:  https://effortless-dolphin-b63000.netlify.app/
